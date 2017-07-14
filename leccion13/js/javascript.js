@@ -2,17 +2,16 @@ var productos = [];
 var records = document.getElementById('records');
 
 // Constructor para generar un nuevo producto
-function Producto(compra, cantidad) {
-  this.compra = compra.toLowerCase(),
-  this.producttID = (productos.length + 1),
-  this.cantidad = cantidad;
+function Producto(compra) {
+  this.compra = compra.toLowerCase();
+  this.producttID = (productos.length + 1);
 };
-
+//this.cantidad = cantidad;
 //Método para imprimir un producto en html
 Producto.prototype.toHTML = function () {
   var html = '';
   html += this.compra.toUpperCase() + '<br>';
-  html += 'Cantidad: ' + this.cantidad + '<br>';
+  //html += 'Cantidad: ' + this.cantidad + '<br>';
   html += '<br><br>';
   return html;
 }
@@ -36,8 +35,8 @@ function printHTML (html){
 var addCompra = document.getElementById("nuevacompra");
 addCompra.onclick = function() {
   var compra = prompt('Ingrese su nueva compra');
-  var cantidad = prompt('Ingrese la cantidad');
-  var product  = new  Producto (compra, cantidad);
+  //var cantidad = prompt('Ingrese la cantidad');
+  var product  = new  Producto (compra);
   productos.push(product);
    printHTML(product.toHTML());
 };
