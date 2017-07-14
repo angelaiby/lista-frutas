@@ -11,7 +11,7 @@
 ### 5 **Quinto** luego subi el commit de la imagen que inserte
 
 ![Alt-text](imagen2.png)
-### 6 **Sexto**  <h3> <b>Catálogo:</b></h3>
+### 6 **Sexto**  escribi el texto ´´´javascript <h3> <b>Catálogo:</b></h3> ´´´ S
 
 ### 7 **Septimo** agrege una lista con el nombre de las frutas <h4> 1. Pera <br> 2. Manzana <br> 3. Piña <br> 4. Naranja <br> 5.Cereza </h4>
 
